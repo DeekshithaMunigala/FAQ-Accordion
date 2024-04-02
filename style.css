@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: hsl(292, 42%, 14%);
+}
+
+body {
+    background-color: hsl(275, 100%, 97%);
+}
+
+.container {
+    background-image: url("Images/background-pattern-desktop.svg");
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(275, 100%, 97%);
+    position: relative;
+}
+
+.accordion {
+    position: absolute;
+    top: 130px;
+    width: 580px;
+    height: auto;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 100%);
+    padding: 50px;
+}
+
+.heading {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.heading img {
+    margin-right: 20px;
+}
+
+.heading h1 {
+    font-size: 40px;
+    font-weight: 780;
+}
+
+.faq .row{
+    margin-bottom: 30px;
+}
+
+.faq .row .question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.faq .row .answer p {
+    color: hsl(292, 16%, 49%);
+    display: none;
+}
+
+.faq .row .answer p.show {
+    display: block;
+}
+
+.faq .row .question #minus-icon {
+    display: none;
+}
+
+.faq .row .question #plus-icon,
+.faq .row .question #minus-icon {
+    width: 28px;
+    height: 28px;
+}
+
+.faq .row .question #plus-icon.hide,
+.faq .row .question #minus-icon.hide {
+    display: none;
+}
+
+.faq .row .question #minus-icon.show,
+.faq .row .question #plus-icon.show {
+    display: inline-block;
+}
+
+
+/* Add media query for screens up to 375px width */
+
+@media (max-width: 600px) {
+    .container {
+        background-image: url("Images/background-pattern-mobile.svg"); 
+        background-repeat: repeat;
+        padding: 20px; 
+    }
+
+    .accordion {
+        width: calc(100% - 50px); 
+        padding: 20px; 
+    }
+
+    .heading {
+        flex-direction: row; 
+        align-items: center; 
+        margin-bottom: 20px; 
+    }
+
+    .heading h1 {
+        font-size: 30px; 
+        font-weight: 700;
+    }
+
+    .faq .row .question {
+        flex-direction: row; 
+    }
+
+    .faq .row .answer p {
+        margin-top: 10px; 
+    }
+}
