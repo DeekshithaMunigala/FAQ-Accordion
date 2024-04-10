@@ -10,7 +10,7 @@ A simple and responsive FAQ accordion built with HTML, CSS, and JavaScript. This
 
 ## Demo
 
-You can see a live demo of the FAQ accordion [here](#)
+You can see a live demo of the FAQ accordion [here](https://faq-accordion-tau-nine.vercel.app/)
 
 ## Installation
 
