@@ -10,7 +10,7 @@ A simple and responsive FAQ accordion built with HTML, CSS, and JavaScript. This
 
 ## Demo
 
-You can see a live demo of the FAQ accordion [here](#) (Replace # with your live demo URL).
+You can see a live demo of the FAQ accordion [here](#)
 
 ## Installation
 
